@@ -6,9 +6,9 @@
 
 html, body{
     margin: 0;
-    width: 100%;
+    width: 100%;    
 }
-
+                    /*Header with navigator and buttons*/
 .header_logo{
     background-image: url(../images/GhostHost.png);
     background-size: cover;
@@ -147,3 +147,215 @@ header img{
   background-color:black;
 } 
 
+                /*Main section 1 with table*/
+.buy_domain{
+  margin-top: 80px;
+  width: 100%;
+}
+
+.buy_domain h3{
+  margin: 140px auto 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.buy_domain p{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; 
+}
+
+.div_table1, .div_table2{
+  width: 65%;
+  padding: 5px;
+  border: 1px solid rgba(153, 153, 102, 0.3);
+  margin: 50px auto;
+
+}
+.table1, .table2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table1 tr td:first-child{
+  border-right: 1px solid rgba(153, 153, 102, 0.3);
+  width: 10%;
+}
+.table1 tr td:nth-child(2){
+  border-right: 1px solid rgba(153, 153, 102, 0.3);  
+  width: 80%;
+}
+
+.big_row{
+  height: 1px;
+}
+
+.big_row td{
+  width: 25%;
+  text-align: center;
+  height: 50px;
+}
+
+.table2 tr td:nth-child(-n+3){
+ //border-right: 1px solid rgba(153, 153, 102, 0.3);
+}
+
+.big_row:first-child td{
+  border-bottom: 1px solid rgba(153, 153, 102, 0.3);   
+}
+
+.table2{
+  border-spacing: 10px;
+}
+
+.big_row td div{
+  width: 100%;
+  height: 70%;
+  border-right: 1px solid rgba(153, 153, 102, 0.3);
+  line-height: 2;  
+}
+
+                /*Main section 2 with packages*/
+.section_packages img{
+  width: 100%;
+  height: 400px;
+}
+
+.ul_packages{
+  overflow: hidden;
+  position: relative;
+  top: -300px;
+  margin-botto: 
+}
+
+.ul_packages li{
+   float: left;
+   width: 19%;
+   margin: 2%;
+   padding-right: 1%;
+   list-style-type: none;
+   background-color: white;
+   border-bottom: 2px solid rgba(153, 153, 102, 0.2); 
+}
+.ul_packages li:first-child{
+  margin-left: 3%;
+  border-top: 4px solid #f9f90f;
+}
+
+.ul_packages li:nth-child(2){
+  border-top: 4px solid #d0d0cd;
+}
+
+.ul_packages li:nth-child(3){
+  border-top: 4px solid #ef0a0a;
+}
+
+.ul_packages li:nth-child(4){
+  border-top: 4px solid #07b9b3;
+}
+
+.ul_packages li:hover > div:nth-child(2){
+  background-color: #7cf198;
+}
+
+.img_package1{
+  background-image: url(../images/anchor.jpg);
+}
+
+.img_package2{
+  background-image: url(../images/normal.jpg);
+}
+
+.img_package3{
+  background-image: url(../images/big.jpg);
+}
+
+.img_package4{
+  background-image: url(../images/biggest.jpg);
+}
+
+.img_package1, .img_package2, .img_package3, .img_package4{
+  width: 100%;
+  height: 70px;
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.img_package1 p, .img_package2 p, .img_package3 p, .img_package4 p{
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.package_info1, .package_info2, .package_info3, .package_info4{
+  width: 90%;
+  margin: 50px 10% 0 5%;
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  padding: 10px 0;
+  border-top: 1px solid rgba(153, 153, 102, 0.3);   
+  border-bottom: 1px solid rgba(153, 153, 102, 0.3);  
+}
+
+.package_left{
+  float: left;
+  width: 80%;
+  margin: 2px 0;
+}
+
+.package_right{
+  float: right;
+  color: #eaea07;
+  font-weight: 600;
+  margin: 2px 0;  
+}
+
+.package_info2 .package_right{
+  color: #61614a;
+}
+
+.package_info3 .package_right{
+  color: #ea1717;
+}
+
+.package_info4 .package_right{
+  color: #41ca9f;
+}
+
+.price_image1{
+  background-image: url(../images/15ye.jpg);
+}
+
+.price_image2{
+  background-image: url(../images/30ye.jpg);
+}
+
+.price_image3{
+  background-image: url(../images/40ye.jpg);
+}
+
+.price_image4{
+  background-image: url(../images/70ye.jpg);
+}
+
+.price_image1, .price_image2, .price_image3, .price_image4{
+  width: 100%;
+  height: 70px;
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.section_packages{
+  height: 600px;
+}
+
+                /*Main section 2 About Us*/
+.about_us{
+  width: 100%;
+  height: 100px;
+}
