@@ -181,6 +181,7 @@ header img{
   border-right: 1px solid rgba(153, 153, 102, 0.3);
   width: 10%;
 }
+
 .table1 tr td:nth-child(2){
   border-right: 1px solid rgba(153, 153, 102, 0.3);  
   width: 80%;
@@ -194,10 +195,24 @@ header img{
   width: 25%;
   text-align: center;
   height: 50px;
+  position: relative;
+  border-right: 1px solid rgba(153, 153, 102, 0.3); 
 }
 
-.table2 tr td:nth-child(-n+3){
- //border-right: 1px solid rgba(153, 153, 102, 0.3);
+.big_row td:last-child{
+  border-right: none; 
+}
+
+.big_row td::after{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  position: absolute;
+  top: 86%;
+  right: -3%;
+  
 }
 
 .big_row:first-child td{
@@ -208,12 +223,6 @@ header img{
   border-spacing: 10px;
 }
 
-.big_row td div{
-  width: 100%;
-  height: 70%;
-  border-right: 1px solid rgba(153, 153, 102, 0.3);
-  line-height: 2;  
-}
 
                 /*Main section 2 with packages*/
 .section_packages img{
@@ -354,8 +363,171 @@ header img{
   height: 600px;
 }
 
-                /*Main section 2 About Us*/
+                /*Main section 3 About Us*/
 .about_us{
   width: 100%;
+  //overflow: hidden;  
+}
+
+.wrapper_about_us{
+  width: 90%;
+  margin: 70px auto 70px auto;
+  padding-top: 70px;
+  border-top: 2px dashed rgba(153, 153, 102, 0.2);
+  overflow: hidden;
+}
+
+.about_us_men ul li{
+  list-style-type: none;
+  width: 30%;
+  float: left;
+}
+
+.about_us_text, .about_us_men{
+  width: 45%;
+  float: left;  
+}
+
+.about_us_text{
+  padding-right: 4%;
+  height: 200px;
+  border-right: 2px dashed rgba(153, 153, 102, 0.2); 
+}
+
+.about_us_men{
+  padding-left: 4%;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  background-image: url(../images/JonnyDoe.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 60%;
   height: 100px;
+  border-radius: 100px;
+  border: 2px solid #acb1ac;
+}
+
+.foto_man2{
+  background-image: url(../images/JohnDoe.jpg);
+}
+
+.foto_man3{
+background-image: url(../images/JohnathanDoe.jpg);
+}
+
+.about_us_men ul li p{
+    text-align: center;
+}
+
+.name{
+  margin: 5px;
+}
+
+.links_wrapper{
+  width: 70%;
+  height: 15px;
+  margin: 10px auto;
+}
+
+.links_wrapper a{
+  margin: 0 2% 0 1%;
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+
+.link1{
+  background-image: url(../images/f.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.link2{
+  background-image: url(../images/bird.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.link3{
+  background-image: url(../images/8.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.our_opinions{
+  width: 100%;
+}
+
+.our_opinions img{
+  height: 250px;
+  width: 100%;
+}
+
+.warranty{
+  width: 100%;
+}
+
+.warranty ul{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.warranty ul li{
+  list-style-type: none;
+  width: 21%;
+  float: left;
+  margin: 70px 2% 50px 2%;
+}
+
+.warranty_circle1,
+.warranty_circle2,
+.warranty_circle3,
+.warranty_circle4{
+  border-radius: 100px;
+  background-color: #f1c40f;
+  background-image: url(../images/zipper.jpg);
+  background-size: 30%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.warranty_circle2{
+  background-image: url(../images/cloud.jpg);
+  background-color: #0faff1;
+}
+
+.warranty_circle3{
+  background-image: url(../images/pointer.jpg);
+  background-color: #95a5a6;
+}
+
+.warranty_circle4{
+  background-image: url(../images/support.jpg);
+  background-color: #f1540f;
+}
+
+.warranty_description p{
+  text-align: center;
+}
+
+.warranty_description p:first-child{
+  margin: 15px 0 8px 0;
+  font-size: 1.2rem;
 }
