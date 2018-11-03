@@ -46,10 +46,10 @@
             <div class="div_table1">
                 <table class="table1">
                     <tr>
-                        <td><p>www.</p></td>
-                        <td colspan="2"><strong>What do you want?</strong></td>
+                        <td><p class="www"><strong>www.</strong></p></td>
+                        <td colspan="2"><span class="table1_question">What do you want?</span></td>
                         <td>
-                            <select name="domain">
+                            <select name="domain" class="select">
                                 <option value="COM" selected>.com</option>
                                 <option value="NET">.net</option>
                                 <option value="INFO">.info</option>
@@ -84,7 +84,7 @@
             <ul class="ul_packages">
                 <li>
                     <div class="img_package1">
-                        <p><strong>BASIC PASKAGE</strong></p>
+                        <p><strong>BASIC PACKAGE</strong></p>
                     </div>
                     <div class="package_info1">
                         <span class="package_left">Disk Space(GB)</span>
@@ -104,7 +104,7 @@
                 </li>
                 <li>
                     <div class="img_package2">
-                            <p><strong>BASIC PASKAGE</strong></p>
+                            <p><strong>NORMAL PACKAGE</strong></p>
                     </div>
                     <div class="package_info2">
                         <span class="package_left">Disk Space(GB)</span>
@@ -124,7 +124,7 @@
                 </li>
                 <li>
                     <div class="img_package3">
-                            <p><strong>BASIC PASKAGE</strong></p>
+                            <p><strong>BIG PACKAGE</strong></p>
                     </div>
                     <div class="package_info3">
                         <span class="package_left">Disk Space(GB)</span>
@@ -144,7 +144,7 @@
                 </li>
                 <li>
                     <div class="img_package4">
-                            <p><strong>BASIC PASKAGE</strong></p>
+                            <p><strong>BIGGEST PACKAGE</strong></p>
                     </div>
                     <div class="package_info4">
                         <span class="package_left">Disk Space(GB)</span>
@@ -209,7 +209,53 @@
     </section>
     <!--start section four-->
     <section class="our_opinions">
-        <img src="./images/banner3.jpg" alt="Author's ipinions" height="250px" width="100%">
+        <div class="section_with_slider">
+            <img src="./images/banner3.jpg" alt="Author's ipinions" height="250px" width="100%">
+            <div class="slider_wrapper">
+                <input type="radio" checked="checked" id="slide1" class="slider_input" name="slide-selector">
+                <input type="radio" id="slide2" class="slider_input" name="slide-selector">
+                <input type="radio" id="slide3" class="slider_input" name="slide-selector">
+                <ul class="ul_slider_items">
+                    <li class="li_slider_item">
+                        <div class="opinion_wrapper">
+                            <p>"Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae."</p>
+                        </div>
+                        <div class="div_name_wrapper">
+                            <p>Jonh Doe</p>
+                        </div>
+                    </li>
+                    <li class="li_slider_item">
+                        <div class="opinion_wrapper">
+                            <p>"Suspendisse tempor turpis odio, sit amet cursus leo consequat non."</p>
+                        </div>
+                        <div class="div_name_wrapper">
+                            <p>Jonny Doe</p>
+                        </div>
+                    </li>
+                    <li class="li_slider_item">
+                        <div class="opinion_wrapper">
+                            <p>"Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae."</p>
+                        </div>
+                        <div class="div_name_wrapper">
+                            <p>Johnathan Doe</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="div_labels_wrapper">
+                    <ul class="ul_slider_labels">
+                        <li class="li_slider_labels">
+                            <label for="slide1"><i class="far fa-circle"></i></label>
+                        </li>
+                        <li class="li_slider_labels">
+                            <label for="slide2"><i class="far fa-circle"></i></label>
+                        </li>
+                        <li class="li_slider_labels">
+                            <label for="slide3"><i class="far fa-circle"></i></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="warranty">
             <ul>
                 <li>
@@ -246,7 +292,7 @@
     <!--start footer-->
     <footer>
         <div class="div_footer_menu">
-            <img src="./images/GhostHost.png" alt="Company Logo">
+            <img src="./images/footer_logo.png" alt="Company Logo">
             <nav>
                 <h2>Footer navigator</h2>
                 <ul class="ul_footer_menu">

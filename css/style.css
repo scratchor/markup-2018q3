@@ -1,3 +1,49 @@
+                                /* Fonts*/
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-extralight.ttf) format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-thin.ttf) format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-semibold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+                            /*For general document*/
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +52,9 @@
 
 html, body{
     margin: 0;
-    width: 100%;    
+    width: 100%;
+    font-family: "Libre Francklin";
+    font-weight: 400;   
 }
                     /*Header with navigator and buttons*/
 .header_logo{
@@ -54,6 +102,9 @@ html, body{
     display: inline-block;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    font-family: "Libre Francklin";
 }
 
 .div_menu_wrapper nav ul li:hover{
@@ -113,7 +164,8 @@ header img{
   position: absolute;  
   left: 50%;
   bottom: 35%;
-  font-weight: 900;
+  font-family: "Libre Francklin";
+  font-weight: 500;
 }
     
 .button1{
@@ -163,7 +215,9 @@ header img{
 .buy_domain p{
   margin: 0 auto;
   width: 100%;
-  text-align: center; 
+  text-align: center;
+  font-family: "Libre Francklin";
+  font-weight: 100; 
 }
 
 .div_table1, .div_table2{
@@ -171,7 +225,6 @@ header img{
   padding: 5px;
   border: 1px solid rgba(153, 153, 102, 0.3);
   margin: 50px auto;
-
 }
 .table1, .table2{
   width: 100%;
@@ -186,6 +239,27 @@ header img{
 .table1 tr td:nth-child(2){
   border-right: 1px solid rgba(153, 153, 102, 0.3);  
   width: 80%;
+}
+
+.table1_question{
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.7)
+}
+
+.www{
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.3);
+  font-family: "Libre Francklin";
+}
+
+.select,
+.select option{
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.4)
 }
 
 .big_row{
@@ -222,6 +296,10 @@ header img{
 
 .table2{
   border-spacing: 10px;
+  font-family: "Libre Francklin";
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.4)
 }
 
 
@@ -235,8 +313,7 @@ header img{
 .ul_packages{
   overflow: hidden;
   position: relative;
-  top: -300px;
-  margin-botto: 
+  top: -300px;  
 }
 
 .ul_packages li{
@@ -285,7 +362,10 @@ header img{
   background-image: url(../images/biggest.jpg);
 }
 
-.img_package1, .img_package2, .img_package3, .img_package4{
+.img_package1, 
+.img_package2, 
+.img_package3, 
+.img_package4{
   width: 100%;
   height: 70px;
   background-size: contain;
@@ -293,14 +373,20 @@ header img{
   background-repeat: no-repeat;
 }
 
-.img_package1 p, .img_package2 p, .img_package3 p, .img_package4 p{
+.img_package1 p, 
+.img_package2 p, 
+.img_package3 p, 
+.img_package4 p{
   margin: 0 auto;
   width: 100%;
   padding-top: 80px;
   text-align: center;
 }
 
-.package_info1, .package_info2, .package_info3, .package_info4{
+.package_info1, 
+.package_info2, 
+.package_info3, 
+.package_info4{
   width: 90%;
   margin: 50px 10% 0 5%;
   height: auto;
@@ -308,7 +394,11 @@ header img{
   overflow: hidden;
   padding: 10px 0;
   border-top: 1px solid rgba(153, 153, 102, 0.3);   
-  border-bottom: 1px solid rgba(153, 153, 102, 0.3);  
+  border-bottom: 1px solid rgba(153, 153, 102, 0.3);
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.5)  
 }
 
 .package_left{
@@ -373,8 +463,8 @@ header img{
 
 .wrapper_about_us{
   width: 90%;
-  margin: 70px auto 70px auto;
-  padding-top: 70px;
+  margin: 60px auto 70px auto;
+  padding-top: 50px;
   border-top: 2px dashed rgba(153, 153, 102, 0.2);
   overflow: hidden;
   clear: both;
@@ -395,6 +485,14 @@ header img{
   padding-right: 4%;
   height: 200px;
   border-right: 2px dashed rgba(153, 153, 102, 0.2); 
+}
+
+.about_us_text p{
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.5);
+  margin-top: 15px;
 }
 
 .about_us_men{
@@ -425,6 +523,13 @@ background-image: url(../images/JohnathanDoe.jpg);
 
 .about_us_men ul li p{
     text-align: center;
+}
+
+.about_us_men ul li p:nth-child(3){
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.3)
 }
 
 .name{
@@ -478,13 +583,135 @@ background-image: url(../images/JohnathanDoe.jpg);
   clear: both;
 }
 
-.our_opinions img{
+.section_with_slider{
+  height: 250px;
+}
+
+.section_with_slider img{
   height: 250px;
   width: 100%;
 }
 
+.slider_input{
+  display: none;
+}
+
+.slider_wrapper{
+  width: 70%;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+  top: -250px;
+  overflow: hidden;
+}
+
+.li_slider_item div p{
+  text-align: center;
+  margin: 10px;
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.5; 
+  font-weight: 500; 
+}
+
+.opinion_wrapper p:first-child{
+  line-height: 1.5;
+  padding-right: 10px;
+  font-family: "Libre Francklin";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.ul_slider_items{
+  width: 300%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: left .5s ease-out;
+  list-style: none;
+  display: block;
+}
+
+.li_slider_item{
+  width: 33.33333333%;
+  height: 200px;
+  color: white;
+  display: block;
+  float: left;  
+}
+
+.opinion_wrapper{
+  width: 100%;
+  overflow: hidden;
+  height: 130px;
+  margin-top: 10px;
+}
+
+.div_labels_wrapper{
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  top: 67%;
+  height: 30px;
+}
+
+.li_slider_labels{
+  display: inline-block;
+}
+
+.li_slider_labels label{
+  width: 15px;
+  margin: 5px 10px;
+  height: 15px;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;    
+}
+
+#slide1:checked ~ .ul_slider_items {
+	left: 0;
+}
+#slide1:checked ~ div ul li:nth-child(1) label{
+	background-color: #fff;
+}
+#slide2:checked ~ .ul_slider_items {
+	left: -100%;
+}
+#slide2:checked ~ div ul li:nth-child(2) label{
+	background-color: #fff;
+}
+#slide3:checked ~ .ul_slider_items {
+	left: -200%;
+}
+#slide3:checked ~ div ul li:nth-child(3) label{
+	background-color: #fff;
+}
+
+.fa-circle{
+  color: #fff;
+}
+
+.div_name_wrapper{
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.div_name_wrapper p{
+  float: right;
+}
+
+.ul_slider_labels{
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+}
+
 .warranty{
   width: 100%;
+  overflow: hidden;
 }
 
 .warranty ul{
@@ -533,6 +760,13 @@ background-image: url(../images/JohnathanDoe.jpg);
   text-align: center;
 }
 
+.warranty_description p:nth-child(2){
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.5)  
+}
+
 .warranty_description p:first-child{
   margin: 15px 0 8px 0;
   font-size: 1.2rem;
@@ -549,7 +783,6 @@ footer{
 
 .div_footer_menu img{
   height: 80px;
-  width: 10%
   float: left;
   position: relative;
   bottom: 10px;
@@ -566,7 +799,7 @@ footer{
 }
 
 .div_footer_menu nav{
-  float: right;
+  float: right;  
 }
 
 .div_footer_menu nav h2{
@@ -576,14 +809,18 @@ footer{
 
 .ul_footer_menu li{
   display: inline-block;
-  margin-right: 20px; 
-  
+  margin-right: 40px;   
+}
+
+.ul_footer_menu li:nth-child(5){
+  margin-right: 0;
 }
 
 .ul_footer_menu li a{
   text-decoration: none;
   color: #8c8484;
-  font-size: 0.8rem
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .ul_footer_menu li a:hover{
@@ -594,6 +831,9 @@ footer{
   width: 80%;
   margin: 40px auto 0 auto;
   overflow: hidden;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgba(64, 64, 64, 0.5)  
 }
 
 .footer_firth_ul{
@@ -612,9 +852,9 @@ footer{
 .footer_firth_ul li,
 .footer_fourth_ul li{
   margin: 8px 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   position: relative;
-  color: #8c8484;  
+  color: #8c8484;
 }
 
 .div_footer_ul_wrapper{
