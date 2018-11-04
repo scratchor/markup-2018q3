@@ -68,6 +68,14 @@ html, body{
     float: left;
 }
 
+.menu_button1{
+  display: none;
+}
+
+.menu_button2{
+  display: none;
+}
+
 .div_menu_wrapper nav h2{
     text-indent: -10000px;
     height: 0;
@@ -459,7 +467,6 @@ header img{
                 /*Main section 3 About Us*/
 .about_us{
   width: 100%;
-  //overflow: hidden;
   clear: both;  
 }
 
@@ -550,7 +557,6 @@ background-image: url(../images/JohnathanDoe.jpg);
 
 .links_wrapper a{
   margin: 0 2% 0 1%;
-  display: inline-block;
   float: left;
   width: 30%;
 }
@@ -616,8 +622,8 @@ background-image: url(../images/JohnathanDoe.jpg);
   margin: 10px;
   font-size: 1.3rem;
   color: white;
-  line-height: 1.5; 
-  font-weight: 500; 
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .opinion_wrapper p:first-child{
@@ -625,7 +631,7 @@ background-image: url(../images/JohnathanDoe.jpg);
   padding-right: 10px;
   font-family: "Libre Francklin";
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6)
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .ul_slider_items{
@@ -1183,6 +1189,43 @@ header img {
 
 @media screen and (max-width: 480px){
 
+.div_menu_wrapper{
+  border: 0;
+}
+
+.menu_button1{
+  width: 100%;
+  height: 50px;
+  display: block;
+  background-image: url(../images/menu2.png);
+  background-size: contain;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-color: #010102;
+  cursor: pointer;
+}
+
+.div_menu_wrapper nav ul{           /* CLASS OPEN*/
+  overflow: hidden;
+  height: 0;
+}
+
+.div_menu_wrapper nav ul.open1{
+  height: auto;
+}
+
+.div_menu_wrapper nav ul li{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+h2.open_greeting{                     /* CLASS OPEN_ GREETING*/
+  height: 0;
+  margin-bottom: 0;
+}
+
 header img {
   width: 200%;
   height: 100%;
@@ -1297,6 +1340,130 @@ header img {
 
 .div_footer_ul_wrapper ul:first-child{
   padding-left: 40%;
+}
+
+.div_footer_menu{
+  border: 0;
+}
+
+.div_footer_items{
+  margin-top: 0;
+}
+
+.menu_button2{
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  display: block;
+  background-image: url(../images/menu2.png);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #382f2f;
+  cursor: pointer;
 } 
 
+.ul_footer_menu li{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.ul_footer_menu{
+  overflow: hidden;
+  height: 0;
+}
+
+.ul_footer_menu.open2{    /*ClASS OPEN*/
+  height: auto;
+}
+
+.open3{
+  margin-top: 400px;      /*ClASS OPEN2*/
+}
+
+}
+
+
+          /* Forth Media Query*/
+
+@media screen and (max-width: 330px){
+header img {
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+.button2{
+  left: -85%;
+}
+
+.buy_domain p{
+  width: 98%;
+}
+
+.div_table1, .div_table2{
+  width: 95%;
+}
+
+.table2{
+  font-size: 0.7rem;
+}
+
+.ul_packages {
+    overflow: hidden;
+    position: relative;
+    top: -300px;
+    left: 15px;
+}
+
+.about_us_text{
+  padding-right: 0;
+  border-right: 0;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  width: 50%;
+  height: 120px;
+  border-radius: 100px;
+}
+
+.about_us_men ul li:nth-child(1){
+  margin-top: 100px;
+}
+
+.li_slider_item div p{
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+.opinion_wrapper p:first-child{
+  padding: 0;
+}
+
+.li_slider_labels{
+  margin-bottom: 2px;
+}
+
+.div_name_wrapper p:first-child{
+  font-size: 0.9rem;
+}
+
+.div_footer_ul_wrapper ul:first-child{
+  padding: 0;
+  margin: 0 30%;
+}
+
+.div_footer_ul_wrapper ul:nth-child(2){
+  padding: 0;
+  margin: 0 10%;
+}
+
+.div_footer_ul_wrapper ul li{
+  font-size: 0.9rem;
+}
 }
