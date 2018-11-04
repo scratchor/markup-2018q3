@@ -1,0 +1,1479 @@
+                                /* Fonts*/
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-extralight.ttf) format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-thin.ttf) format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Libre Francklin";
+    src: url(../fonts/libre-franklin/librefranklin-semibold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+                            /*For general document*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html, body{
+    margin: 0;
+    width: 100%;
+    font-family: "Libre Francklin";
+    font-weight: 400;
+    //overflow: hidden;   
+}
+                    /*Header with navigator and buttons*/
+.header_logo{
+    background-image: url(../images/GhostHost.png);
+    background-size: cover;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 47px;
+    text-indent: -10000px;
+    float: left;
+}
+
+.menu_button1{
+  display: none;
+}
+
+.menu_button2{
+  display: none;
+}
+
+.div_menu_wrapper nav h2{
+    text-indent: -10000px;
+    height: 0;
+}
+
+.div_menu_wrapper{
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    line-height: 50px;
+}
+
+.div_menu_wrapper nav{
+    height: 100%;
+    float: right;
+}
+
+.div_menu_wrapper nav ul{
+    height: 100%;
+}
+
+.div_menu_wrapper nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    height: 100%;
+}
+
+.div_menu_wrapper nav ul li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    font-family: "Libre Francklin";
+}
+
+.div_menu_wrapper nav ul li:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7)
+}
+
+header{
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.greeting{
+    background-image: url(../images/greeting.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 250px;
+    text-indent: -10000px;
+    position: relative;
+    z-index: 2;
+    margin: 200px 35%;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_button{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    clear: both;
+}
+
+.button_wrapper{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    margin-left:-2px;
+    margin-right:-2px;
+    display: inline-block;
+    position: relative;
+}
+
+.button_wrapper:first-child{
+    width: 47%;      
+}
+
+.header_button p {
+  color: white;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  font-family: "Libre Francklin";
+  font-weight: 500;
+}
+    
+.button1{
+  height: 80px;
+  width: 2000px;
+  height: 1500px;
+  background-color: rgb(44, 58, 79);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button2{
+  width: 2000px;
+  height: 1500px;
+  background-color: rgb(41, 203, 135);
+  transform: rotate(15deg);
+  top: -50%;
+  left: -20%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button_wrapper button:hover{
+    background-color:black;
+    transition: all .2s linear;
+    font-weight: 900;
+}
+
+.header_button p:hover + button{
+  background-color:black;
+} 
+
+                /*Main section 1 with table*/
+
+.buy_domain{
+  margin-top: 80px;
+  width: 100%;
+}
+
+.buy_domain h3{
+  margin: 140px auto 20px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.buy_domain p{
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-family: "Libre Francklin";
+  font-weight: 100;
+}
+
+.div_table1, .div_table2{
+  width: 65%;
+  padding: 5px;
+  border: 1px solid rgba(153, 153, 102, 0.3);
+  margin: 50px auto;
+}
+.table1, .table2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table1 tr td:first-child{
+  border-right: 1px solid rgba(153, 153, 102, 0.3);
+  width: 10%;
+}
+
+.table1 tr td:nth-child(2){
+  border-right: 1px solid rgba(153, 153, 102, 0.3);  
+  width: 80%;
+}
+
+.table1_question{
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.7)
+}
+
+.www{
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.3);
+  font-family: "Libre Francklin";
+}
+
+.select,
+.select option{
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.4)
+}
+
+.big_row{
+  height: 1px;
+}
+
+.big_row td{
+  width: 25%;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  border-right: 1px solid rgba(153, 153, 102, 0.3); 
+}
+
+.big_row td:last-child{
+  border-right: none; 
+}
+
+.big_row td::after{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  position: absolute;
+  top: 86%;
+  right: -3%;
+  
+}
+
+.big_row:first-child td{
+  border-bottom: 1px solid rgba(153, 153, 102, 0.3);   
+}
+
+.table2{
+  border-spacing: 10px;
+  font-family: "Libre Francklin";
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.4)
+}
+
+
+                /*Main section 2 with packages*/
+
+.section_packages img{
+  width: 100%;
+  height: 400px;
+}
+
+.ul_packages{
+  overflow: hidden;
+  position: relative;
+  top: -300px;
+}
+
+.ul_packages li{
+   float: left;
+   width: 19%;
+   margin: 2%;
+   padding-right: 1%;
+   list-style-type: none;
+   background-color: white;
+   border-bottom: 2px solid rgba(153, 153, 102, 0.2); 
+}
+.ul_packages li:first-child{
+  margin-left: 3%;
+  border-top: 4px solid #f9f90f;
+}
+
+.ul_packages li:nth-child(2){
+  border-top: 4px solid #d0d0cd;
+}
+
+.ul_packages li:nth-child(3){
+  border-top: 4px solid #ef0a0a;
+}
+
+.ul_packages li:nth-child(4){
+  border-top: 4px solid #07b9b3;
+}
+
+.ul_packages li:hover > div:nth-child(2){
+  background-color: #7cf198;
+}
+
+.img_package1{
+  background-image: url(../images/anchor.jpg);
+}
+
+.img_package2{
+  background-image: url(../images/normal.jpg);
+}
+
+.img_package3{
+  background-image: url(../images/big.jpg);
+}
+
+.img_package4{
+  background-image: url(../images/biggest.jpg);
+}
+
+.img_package1, 
+.img_package2, 
+.img_package3, 
+.img_package4{
+  width: 100%;
+  height: 70px;
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.img_package1 p, 
+.img_package2 p, 
+.img_package3 p, 
+.img_package4 p{
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.package_info1, 
+.package_info2, 
+.package_info3, 
+.package_info4{
+  width: 90%;
+  margin: 50px 10% 0 5%;
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  padding: 10px 0;
+  border-top: 1px solid rgba(153, 153, 102, 0.3);   
+  border-bottom: 1px solid rgba(153, 153, 102, 0.3);
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.5)  
+}
+
+.package_left{
+  float: left;
+  width: 80%;
+  margin: 2px 0;
+}
+
+.package_right{
+  float: right;
+  color: #eaea07;
+  font-weight: 600;
+  margin: 2px 0;  
+}
+
+.package_info2 .package_right{
+  color: #61614a;
+}
+
+.package_info3 .package_right{
+  color: #ea1717;
+}
+
+.package_info4 .package_right{
+  color: #41ca9f;
+}
+
+.price_image1{
+  background-image: url(../images/15ye.jpg);
+}
+
+.price_image2{
+  background-image: url(../images/30ye.jpg);
+}
+
+.price_image3{
+  background-image: url(../images/40ye.jpg);
+}
+
+.price_image4{
+  background-image: url(../images/70ye.jpg);
+}
+
+.price_image1, .price_image2, .price_image3, .price_image4{
+  width: 100%;
+  height: 70px;
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.section_packages{
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+                /*Main section 3 About Us*/
+.about_us{
+  width: 100%;
+  clear: both;  
+}
+
+.wrapper_about_us{
+  width: 90%;
+  margin: 60px auto 70px auto;
+  padding-top: 50px;
+  border-top: 2px dashed rgba(153, 153, 102, 0.2);
+  overflow: hidden;
+  clear: both;
+}
+
+.about_us_men ul li{
+  list-style-type: none;
+  width: 30%;
+  float: left;
+}
+
+.about_us_text, .about_us_men{
+  width: 45%;
+  float: left;  
+}
+
+.about_us_text{
+  padding-right: 4%;
+  height: 200px;
+  border-right: 2px dashed rgba(153, 153, 102, 0.2); 
+}
+
+.about_us_text p{
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.5);
+  margin-top: 15px;
+}
+
+.about_us_men{
+  padding-left: 4%;
+}
+
+.about_us_men ul{
+  overflow: hidden;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  background-image: url(../images/JonnyDoe.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 60%;
+  height: 100px;
+  border-radius: 100px;
+  border: 2px solid #acb1ac;
+}
+
+.foto_man2{
+  background-image: url(../images/JohnDoe.jpg);
+}
+
+.foto_man3{
+background-image: url(../images/JohnathanDoe.jpg);
+}
+
+.about_us_men ul li p{
+    text-align: center;
+}
+
+.about_us_men ul li p:nth-child(3){
+  font-family: "Libre Francklin";
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(64, 64, 64, 0.3)
+}
+
+.name{
+  margin: 5px;
+}
+
+.links_wrapper{
+  width: 70%;
+  height: 15px;
+  margin: 10px auto;
+}
+
+.links_wrapper a{
+  margin: 0 2% 0 1%;
+  float: left;
+  width: 30%;
+}
+
+.link1{
+  background-image: url(../images/f.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.link2{
+  background-image: url(../images/bird.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+.link3{
+  background-image: url(../images/8.jpg);
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 15px;
+}
+
+                /*Main section 4 Opinions*/
+
+.our_opinions{
+  width: 100%;
+  clear: both;
+}
+
+.section_with_slider{
+  height: 250px;
+}
+
+.section_with_slider img{
+  height: 250px;
+  width: 100%;
+}
+
+.slider_input{
+  display: none;
+}
+
+.slider_wrapper{
+  width: 70%;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+  top: -250px;
+  overflow: hidden;
+}
+
+.li_slider_item div p{
+  text-align: center;
+  margin: 10px;
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.opinion_wrapper p:first-child{
+  line-height: 1.5;
+  padding-right: 10px;
+  font-family: "Libre Francklin";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ul_slider_items{
+  width: 300%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: left .5s ease-out;
+  list-style: none;
+  display: block;
+}
+
+.li_slider_item{
+  width: 33.33333333%;
+  height: 200px;
+  color: white;
+  display: block;
+  float: left;  
+}
+
+.opinion_wrapper{
+  width: 100%;
+  overflow: hidden;
+  height: 130px;
+  margin-top: 10px;
+}
+
+.div_labels_wrapper{
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  top: 67%;
+  height: 30px;
+}
+
+.li_slider_labels{
+  display: inline-block;
+}
+
+.li_slider_labels label{
+  width: 15px;
+  margin: 5px 10px;
+  height: 15px;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;    
+}
+
+#slide1:checked ~ .ul_slider_items {
+	left: 0;
+}
+#slide1:checked ~ div ul li:nth-child(1) label{
+	background-color: #fff;
+}
+#slide2:checked ~ .ul_slider_items {
+	left: -100%;
+}
+#slide2:checked ~ div ul li:nth-child(2) label{
+	background-color: #fff;
+}
+#slide3:checked ~ .ul_slider_items {
+	left: -200%;
+}
+#slide3:checked ~ div ul li:nth-child(3) label{
+	background-color: #fff;
+}
+
+.fa-circle{
+  color: #fff;
+}
+
+.div_name_wrapper{
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.div_name_wrapper p{
+  float: right;
+}
+
+.ul_slider_labels{
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+}
+
+.warranty{
+  width: 100%;
+  overflow: hidden;
+}
+
+.warranty ul{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.warranty ul li{
+  list-style-type: none;
+  width: 21%;
+  float: left;
+  margin: 70px 2% 50px 2%;
+}
+
+.warranty_circle1,
+.warranty_circle2,
+.warranty_circle3,
+.warranty_circle4{
+  border-radius: 100px;
+  background-color: #f1c40f;
+  background-image: url(../images/zipper.jpg);
+  background-size: 30%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.warranty_circle2{
+  background-image: url(../images/cloud.jpg);
+  background-color: #0faff1;
+}
+
+.warranty_circle3{
+  background-image: url(../images/pointer.jpg);
+  background-color: #95a5a6;
+}
+
+.warranty_circle4{
+  background-image: url(../images/support.jpg);
+  background-color: #f1540f;
+}
+
+.warranty_description p{
+  text-align: center;
+}
+
+.warranty_description p:nth-child(2){
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgba(64, 64, 64, 0.5)  
+}
+
+.warranty_description p:first-child{
+  margin: 15px 0 8px 0;
+  font-size: 1.2rem;
+}
+
+                /*Footer*/
+
+footer{
+  clear: both;
+  background-color: #382f2f;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.footer_logo{
+  background-image: url(../images/footer_logo.png);
+  background-size: cover;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 55px;
+  text-indent: -10000px;
+  float: left;
+}
+
+.div_footer_menu{
+    position: relative;
+    height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    line-height: 60px;
+    clear: both;
+}
+
+.div_footer_menu nav{
+  float: right;  
+}
+
+.div_footer_menu nav h2{
+  text-indent: -100000px;
+  height: 0;
+}
+
+.ul_footer_menu li{
+  display: inline-block;
+  margin-right: 40px;   
+}
+
+.ul_footer_menu li:nth-child(5){
+  margin-right: 0;
+}
+
+.ul_footer_menu li a{
+  text-decoration: none;
+  color: #8c8484;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ul_footer_menu li a:hover{
+  color: white;  
+}
+
+.div_footer_items{
+  width: 80%;
+  margin: 40px auto 0 auto;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgba(64, 64, 64, 0.5);
+}
+
+.footer_firth_ul{
+  float: left;
+  width: 32%;
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.footer_fourth_ul{
+  float: left;
+  padding-left: 1%;
+  width: 25.8%;
+  list-style-type: none;
+}
+
+.footer_firth_ul li,
+.footer_fourth_ul li{
+  margin: 8px 0;
+  font-size: 0.8rem;
+  position: relative;
+  color: #8c8484;
+}
+
+.div_footer_ul_wrapper{
+  float: left;
+  width: 38%;
+  
+}
+
+.div_footer_ul_wrapper ul{
+  float: left;
+  margin: 0 8%;
+  width: 34%;  
+}
+
+
+.div_footer_ul_wrapper ul li{
+  margin: 8px 0;
+  list-style-type: none;
+  position: relative;     
+}
+
+.div_footer_ul_wrapper ul li:hover{
+  color: white;
+}
+
+.div_footer_ul_wrapper ul li:hover > a{
+  color: white;
+}
+
+.div_footer_ul_wrapper ul li a{
+  text-decoration: none;
+  color: #8c8484; 
+}
+
+.div_footer_ul_wrapper ul:first-child{
+ margin-left: 10%;
+}
+
+.div_footer_ul_wrapper ul:nth-child(2){
+  margin-right: 0px;
+  border-right: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+#footer_text_1{
+  width: 95%;
+  line-height: 1.5;
+}
+
+.text_for_decor{
+  color: #968d8d;
+  font-weight: bold;
+}
+
+.li_length1{
+  width: 86.3%
+}
+
+.arrow{
+  position: absolute;
+  left: -15px;
+}
+
+.li_length2{
+  width: 94%;
+}
+.icons2{
+  position: absolute;
+  top: 2px;
+}
+
+.move_for_icon{
+  position: relative;
+  left: 20px
+}
+
+.footer_fourth_ul li a{
+  text-decoration: none;
+  color: #8c8484;
+}
+
+.footer_fourth_ul li:hover > a{
+  color: white;
+}
+
+
+      /* Media Queries*/
+      /* First Media Query*/
+  
+@media screen and (max-width: 930px){
+.button2{
+  left: -30%;
+}
+
+.package_info1, 
+.package_info2, 
+.package_info3, 
+.package_info4{
+  font-family: "Libre Francklin";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgba(64, 64, 64, 0.5);
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  width: 80%;
+  height: 90px;
+  border-radius: 100px;
+}
+
+.links_wrapper {
+    width: 90%;
+}
+
+.warranty_description p:first-child{
+  font-size: 0.95rem;
+}
+}
+          
+          /* Second Media Query*/
+
+@media screen and (max-width: 768px){
+
+.div_menu_wrapper nav{
+  float: none;
+  clear: left;
+}
+
+.div_menu_wrapper{
+  height: auto;
+  width: 100%;
+}
+
+.header_logo{
+  float: none;
+  margin: 0 auto;
+}
+
+.div_menu_wrapper nav ul li{
+   margin: 10px 0 0;
+   width: 16%;
+   text-align: center;
+}
+
+.greeting{
+  width: 80%;
+  height: 350px;
+  margin: 120px auto;
+}
+
+header img {
+  content: url(../images/header2.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button2{
+  left: -40%;
+}
+
+.buy_domain p{
+  width: 95%
+}
+
+.div_table1, .div_table2{
+  width: 90%;
+}
+
+.ul_packages li {
+  float: left;
+  width: 43%;
+  margin: 2%;
+  padding-right: 1%;
+  border-right: 1px solid rgb(191, 167, 167);
+  border-left: 1px solid rgb(191, 167, 167);
+}
+
+.section_packages{
+  height: 900px;
+}
+
+.section_packages img{
+  width: 200%;
+  position: relative;
+  left: -50%
+}
+
+.about_us_text, .about_us_men{
+  width: 100%;
+}
+
+.about_us_text{
+  padding-right: 0;
+  border-right: 0;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  width: 60%;
+  height: 100px;
+  border-radius: 100px;
+}
+.warranty ul li{
+  list-style-type: none;
+  width: 46%;
+  float: left;
+  margin: 70px 2% 50px 2%;
+}
+
+.warranty ul li:nth-child(n+3){
+  margin-top: 20px;
+}
+
+.div_footer_menu{
+  height: 150px;
+  width: 90%;
+}
+
+.div_footer_menu nav{
+  float: none;
+  clear: both;
+  width: 100%;
+}
+
+.div_footer_menu nav ul{
+  width: 100%;
+}
+
+.footer_logo{
+  float: none; 
+  margin: 0 auto;
+}
+
+.ul_footer_menu li{
+  width: 19%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#footer_text_1{
+  width: 100%;
+}
+
+.div_footer_items{
+  width: 90%
+}
+
+.footer_firth_ul {
+  float: none;
+  width: 99%;
+  border-right: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.div_footer_ul_wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.div_footer_ul_wrapper ul {
+    float: left;
+    width: 36%;    
+}
+
+.div_footer_ul_wrapper ul li{
+  margin: 25px 0;
+  font-size: 1rem;
+}  
+
+.div_footer_ul_wrapper ul:nth-child(2){
+  margin: 0;
+  border: 0;
+  float: right;
+  padding-left: 10%;
+
+}
+
+.div_footer_ul_wrapper ul:first-child{
+  margin: 0;
+  float: left;
+  padding-left: 18%;
+}
+
+.footer_fourth_ul {
+    clear: both;
+    float: none;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footer_fourth_ul li a:nth-child(-n+2){
+  position: relative;
+  left: -12px;
+}
+
+.li_length2{
+  width: 100%;
+}
+
+.icons2 {
+    position: absolute;
+    top: 1px;    
+}
+
+}
+
+
+          /* Third Media Query*/
+
+@media screen and (max-width: 480px){
+
+.div_menu_wrapper{
+  border: 0;
+}
+
+.menu_button1{
+  width: 100%;
+  height: 50px;
+  display: block;
+  background-image: url(../images/menu2.png);
+  background-size: contain;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-color: rgb(33, 38, 41, 0.5);    
+  cursor: pointer;
+}
+
+.div_menu_wrapper nav ul{           /* CLASS OPEN*/
+  overflow: hidden;
+  height: 0;
+}
+
+.div_menu_wrapper nav ul.open1{
+  height: auto;
+}
+
+.div_menu_wrapper nav ul li{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+h2.open_greeting{                     /* CLASS OPEN_ GREETING*/
+  height: 0;
+  margin-bottom: 0;
+}
+
+header img {
+  content:url("../images/header2.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+}
+
+.button2{
+  left: -65%;
+}
+
+.buy_domain p{
+  width: 95%
+}
+
+.div_table1, .div_table2{
+  width: 90%;
+}
+
+.table2{
+  font-size: 0.8rem;
+}
+
+.ul_packages {
+    overflow: hidden;
+    position: relative;
+    top: -300px;
+    left: 30px;
+}
+
+.ul_packages li:first-child{
+  margin: 0;
+}
+
+.ul_packages li {
+  float: left;
+  width: 84%;
+  margin: 40px 0;
+  padding-right: 0;
+  border-right: 1px solid rgb(191, 167, 167);
+  border-left: 1px solid rgb(191, 167, 167);
+}
+
+.section_packages{
+  height: 1850px;
+}
+
+.package_info1, .package_info2, .package_info3, .package_info4{
+  font-size: 0.9rem;
+    
+}
+
+.section_packages img{
+  width: 200%;
+  position: relative;
+  left: -50%
+}
+
+.about_us_text, .about_us_men{
+  width: 100%;
+}
+
+.about_us_text{
+  padding-right: 0;
+  border-right: 0;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  width: 40%;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.about_us_men ul li {
+    list-style-type: none;
+    width: 90%;
+    float: left;
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(191, 167, 167, 0.5);
+}
+
+.about_us_men ul li:nth-child(3){
+  margin: 20px 0 0;
+}
+
+.links_wrapper {
+    width: 40%;
+}
+
+.warranty ul li{
+  list-style-type: none;
+  width: 96%;
+  float: left;
+  margin: 20px 2% 50px 2%;
+}
+
+.warranty ul li:nth-child(1){
+  margin-top: 50px;
+}
+
+.div_footer_ul_wrapper ul {
+  float: left;
+  margin: 0;
+  width: 60%;
+  padding: 0;
+  padding-left: 40%;
+}
+
+
+.div_footer_ul_wrapper ul:first-child{
+  padding-left: 40%;
+}
+
+.div_footer_menu{
+  border: 0;
+}
+
+.div_footer_items{
+  margin-top: 0;
+}
+
+.menu_button2{
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  display: block;
+  background-image: url(../images/menu2.png);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #382f2f;
+  cursor: pointer;
+} 
+
+.ul_footer_menu li{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.ul_footer_menu{
+  overflow: hidden;
+  height: 0;
+}
+
+.ul_footer_menu.open2{    /*ClASS OPEN*/
+  height: auto;
+}
+
+.open3{
+  margin-top: 400px;      /*ClASS OPEN2*/
+}
+
+.header_button p{
+  left: 35%;
+}
+
+}
+
+
+          /* Forth Media Query*/
+
+@media screen and (max-width: 330px){
+header img {
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+.button2{
+  left: -100%;
+}
+
+.buy_domain p{
+  width: 98%;
+}
+
+.div_table1, .div_table2{
+  width: 95%;
+}
+
+.table2{
+  font-size: 0.7rem;
+}
+
+.ul_packages {
+    overflow: hidden;
+    position: relative;
+    top: -300px;
+    left: 15px;
+}
+
+.about_us_text{
+  padding-right: 0;
+  border-right: 0;
+}
+
+.foto_man1,
+.foto_man2,
+.foto_man3{
+  width: 50%;
+  height: 120px;
+  border-radius: 100px;
+}
+
+.about_us_men ul li:nth-child(1){
+  margin-top: 100px;
+}
+
+.li_slider_item div p{
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+.opinion_wrapper p:first-child{
+  padding: 0;
+}
+
+.li_slider_labels{
+  margin-bottom: 2px;
+}
+
+.div_name_wrapper p:first-child{
+  font-size: 0.9rem;
+}
+
+.div_footer_ul_wrapper ul:first-child{
+  padding: 0;
+  margin: 0 30%;
+}
+
+.div_footer_ul_wrapper ul:nth-child(2){
+  padding: 0;
+  margin: 0 10%;
+}
+
+.div_footer_ul_wrapper ul li{
+  font-size: 0.9rem;
+}
+
+}
