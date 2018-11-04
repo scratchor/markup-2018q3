@@ -54,7 +54,8 @@ html, body{
     margin: 0;
     width: 100%;
     font-family: "Libre Francklin";
-    font-weight: 400;   
+    font-weight: 400;
+    //overflow: hidden;   
 }
                     /*Header with navigator and buttons*/
 .header_logo{
@@ -462,6 +463,8 @@ header img{
 
 .section_packages{
   height: 600px;
+  width: 100%;
+  overflow: hidden;
 }
 
                 /*Main section 3 About Us*/
@@ -1023,11 +1026,12 @@ footer{
 }
 
 header img {
-  width: 160%;
+  content: url(../images/header2.jpg);
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -30%;
+  left: 0;
 }
 
 .button2{
@@ -1201,7 +1205,7 @@ header img {
   background-size: contain;
   background-position: 90% 50%;
   background-repeat: no-repeat;
-  background-color: #010102;
+  background-color: rgb(33, 38, 41, 0.5);    
   cursor: pointer;
 }
 
@@ -1227,11 +1231,12 @@ h2.open_greeting{                     /* CLASS OPEN_ GREETING*/
 }
 
 header img {
-  width: 200%;
+  content:url("../images/header2.jpg");
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -50%;
+  left: 0%;
 }
 
 .button2{
@@ -1382,6 +1387,10 @@ header img {
   margin-top: 400px;      /*ClASS OPEN2*/
 }
 
+.header_button p{
+  left: 35%;
+}
+
 }
 
 
@@ -1397,7 +1406,7 @@ header img {
 }
 
 .button2{
-  left: -85%;
+  left: -100%;
 }
 
 .buy_domain p{
@@ -1466,4 +1475,5 @@ header img {
 .div_footer_ul_wrapper ul li{
   font-size: 0.9rem;
 }
+
 }
